@@ -12,7 +12,7 @@
 
 import { requireNativeComponent } from 'react-native';
 
-const RCTImagePicker = requireNativeComponent('ImagePickerIOS');
+const RCTImagePicker = requireNativeComponent('RCTImagePicker');
 
 const ImagePickerIOS = {
   canRecordVideos: function(callback: Function) {
