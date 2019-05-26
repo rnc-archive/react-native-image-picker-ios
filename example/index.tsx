@@ -90,7 +90,7 @@ class ExampleApp extends React.Component<{}, State> {
     return (
       <ScrollView testID="scrollView" style={styles.container}>
         <SafeAreaView />
-        <Text style={styles.sectionTitle}>Staic methods</Text>
+        <Text style={styles.sectionTitle}>Static methods</Text>
         <View style={styles.exampleContainer}>
           <Text>{`Can use camera: ${canUseCamera}!`}</Text>
           <Text>{`Can record video: ${canRecordVideos}!`}</Text>
