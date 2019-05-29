@@ -81,25 +81,24 @@ ImagePickerIOS.canRecordVideos(canRecordVideos => {
 
 ## API
 * **Types:**
-  * [`CameraDialogConfig`](#CameraDialogConfig)
-  * [`SelectDialogConfig`](#SelectDialogConfig)
+  * [`OpenCameraDialogOptions`](#OpenCameraDialogOptions)
+  * [`OpenSelectDialogOptions`](#OpenSelectDialogOptions)
 * **Methods:**
   * [`canUseCamera(callback)`](#canUseCamera)
   * [`canRecordVideos(callback)`](#canRecordVideos)
-  * [`openCameraDialog(config, successCallback, cancelCallback)`](#openCameraDialog)
-  * [`openSelectDialog(config, successCallback, cancelCallback)`](#openCameraDialog)
+  * [`openCameraDialog(options, successCallback, cancelCallback)`](#openCameraDialog)
+  * [`openSelectDialog(options, successCallback, cancelCallback)`](#openCameraDialog)
 
 ### Types
 
-#### `CameraDialogConfig`
+#### `OpenCameraDialogOptions`
 Describes the settings for the camera:
 
 | Property        | Type                                             | Description                                                                                        |
 | --------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| `unmirrorFrontFacingCamera`          | `boolean`          | ...                                          |
 | `videoMode`   | `boolean`                                        | Should the camera open in video mode. |
 
-#### `SelectDialogConfig`
+#### `OpenSelectDialogOptions`
 Describes the settings for the camera:
 
 | Property        | Type                                             | Description                                                                                        |
@@ -133,7 +132,7 @@ ImagePickerIOS.canRecordVideos(canRecordVideos => {
 
 #### `openCameraDialog()`
 
-Opens the camera dialog with the specified [`CameraDialogConfig`](#CameraDialogConfig) and two callbacks, one for success and one for cancel.
+Opens the camera dialog with the specified [`OpenCameraDialogOptions`](#OpenCameraDialogOptions) and two callbacks, one for success and one for cancel.
 
 **Example:**
 ```javascript
@@ -149,7 +148,7 @@ ImagePickerIOS.openCameraDialog({
 
 #### `openSelectDialog()`
 
-Opens the camera dialog with the specified [`SelectDialogConfig`](#SelectDialogConfig) and two callbacks, one for success and one for cancel.
+Opens the camera dialog with the specified [`OpenSelectDialogOptions`](#OpenSelectDialogOptions) and two callbacks, one for success and one for cancel.
 
 **Example:**
 ```javascript
@@ -162,7 +161,6 @@ ImagePickerIOS.openCameraDialog({
   // cancel
 });
 ```
-<!-- 
 ## Troubleshooting
 
 ### Errors while running Jest tests
@@ -173,18 +171,18 @@ If you do not have a Jest Setup file configured, you should add the following to
 setupFiles: ['<rootDir>/jest.setup.js']
 ```
 
-You should then add the following to your Jest setup file to mock the NetInfo Native Module:
+You should then add the following to your Jest setup file to mock the ImagePickerIOS Native Module:
 
 ```js
 import { NativeModules } from 'react-native';
 
-NativeModules.RNCNetInfo = {
-  getCurrentConnectivity: jest.fn(),
-  isConnectionMetered: jest.fn(),
-  addListener: jest.fn(),
-  removeListeners: jest.fn()
+NativeModules.RNCImagePickerIOS = {
+  canRecordVideos: jest.fn(),
+  canUseCamera: jest.fn(),
+  openCameraDialog: jest.fn(),
+  openSelectDialog: jest.fn(),
 };
-``` -->
+``` 
 
 ### Issues with the iOS simulator
 
