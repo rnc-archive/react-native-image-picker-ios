@@ -2,6 +2,14 @@
 
 [![CircleCI Status](https://img.shields.io/circleci/project/github/react-native-community/react-native-image-picker-ios/master.svg)](https://circleci.com/gh/react-native-community/workflows/react-native-image-picker-ios/tree/master) ![Supports iOS](https://img.shields.io/badge/platforms-ios-lightgrey.svg) ![MIT License](https://img.shields.io/npm/l/@react-native-community/image-picker-ios.svg)
 
+
+## Notice
+___
+This module was pulled out of React Native core part of the [☂️Lean Core](https://github.com/facebook/react-native/issues/23313) movement and is considered deprecated.
+
+We recommend you use either [react-native-image-picker](https://github.com/react-native-community/react-native-image-picker) or [expo-image-picker](https://docs.expo.io/versions/latest/sdk/imagepicker/). Both packages are well maintainer and have better cross platform support.
+___
+
 React Native ImagePicker for iOS. It allows you to get information on:
 
 * Can you use the Camera
