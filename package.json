@@ -1,5 +1,5 @@
 {
-  "name": "@react-native-community/imagepickerios",
+  "name": "@react-native-community/image-picker-ios",
   "version": "1.0.0",
   "description": "React Native Image Picker for iOS",
   "react-native": "src/index.ts",
@@ -13,7 +13,9 @@
     "/*.podspec"
   ],
   "author": "Johan du Toit <jdutoit.dev@gmail.com>",
-  "contributors": [],
+  "contributors": [
+    "Johan du Toit <jdutoit.dev@gmail.com> (johan.dev)"
+  ],
   "homepage": "https://github.com/react-native-community/react-native-image-picker-ios#readme",
   "license": "MIT",
   "scripts": {
@@ -68,7 +70,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-native-community/react-native-netinfo.git"
+    "url": "git+https://github.com/react-native-community/react-native-image-picker-ios.git"
   },
   "@react-native-community/bob": {
     "source": "src",
@@ -89,5 +91,12 @@
       "yarn eslint --fix",
       "git add"
     ]
+  },
+  "bugs": {
+    "url": "https://github.com/react-native-community/react-native-image-picker-ios/issues"
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
   }
 }
