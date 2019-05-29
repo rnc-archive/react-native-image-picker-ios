@@ -5,9 +5,9 @@
 
 ## Notice
 ___
-This module was pulled out of React Native core part of the [☂️Lean Core](https://github.com/facebook/react-native/issues/23313) movement and should rarely be used (consider it deprecated).
+This module was pulled out of React Native core part of the [☂️Lean Core](https://github.com/facebook/react-native/issues/23313) movement and is considered deprecated.
 
-We recommend you use either [react-native-image-picker](https://github.com/react-native-community/react-native-image-picker) or [expo-image-picker](https://docs.expo.io/versions/latest/sdk/imagepicker/).    Both packages have more support, as well as better cross platform support.
+We recommend you use either [react-native-image-picker](https://github.com/react-native-community/react-native-image-picker) or [expo-image-picker](https://docs.expo.io/versions/latest/sdk/imagepicker/). Both packages are well maintainer and have better cross platform support.
 ___
 
 React Native ImagePicker for iOS. It allows you to get information on:
